@@ -1,0 +1,30 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:therapist_journey/core/presentation/utilities/assets/app_assets.dart';
+import 'package:therapist_journey/core/presentation/widgets/base/base_stateless_widget.dart';
+
+class CustomSvgWidget extends BaseStatelessWidget {
+  CustomSvgWidget({
+    super.key,
+    this.iconColor,
+    this.icon,
+  });
+  Color? iconColor;
+  String? icon;
+  @override
+  Widget baseBuild(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(13),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(5),
+        border: Border.fromBorderSide(
+          BorderSide(color: colors.inputTextfieldColor, width: 2),
+        ),
+      ),
+      child: SvgPicture.asset(
+        icon == null ? AppAssets.closeIcon : icon ?? '',
+        colorFilter: ColorFilter.mode(iconColor ?? colors.blackOpacityColor, BlendMode.srcIn),
+      ),
+    );
+  }
+}

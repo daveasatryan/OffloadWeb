@@ -1,0 +1,1 @@
+enum VerifieEnum {createAccount, forgetPassword}

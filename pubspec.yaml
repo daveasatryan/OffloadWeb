@@ -1,0 +1,142 @@
+name: therapist_journey
+description: Therapist Journey
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # service
+  intl: ^0.17.0
+  freezed: ^2.3.2
+  simple_gesture_detector: ^0.2.0
+  json_annotation: ^4.8.0
+  json_serializable: ^6.6.1
+  cached_network_image: ^3.2.3
+  universal_platform: ^1.0.0+1
+  file_picker: ^5.2.5
+  photo_manager: ^2.5.2
+  permission_handler: ^10.2.0
+  http_parser: ^4.0.2
+  flutter_native_image: ^0.0.6+1
+  shimmer: ^2.0.0
+  universal_html: ^2.0.8
+  url_strategy: ^0.2.0
+  dart_extensions_methods: ^2.0.0
+  dart_date: ^1.1.1
+  flutter_screenutil: ^5.6.1 
+  dynamic_height_grid_view: ^0.0.3
+  readmore: 2.2.0
+  avatar_view: 1.0.1
+  pin_code_fields: 7.4.0
+  image_picker: 0.8.7
+  dropdown_button2: 2.1.0
+  fluttertoast: 8.2.1
+  native_flutter_proxy: 0.1.15
+  scrollable_positioned_list: 0.3.8
+
+  #ui
+  cupertino_icons: ^1.0.5
+  animate_icons: ^2.0.0
+  mask_text_input_formatter: ^2.4.0
+  responsive_framework: ^0.2.0
+   
+
+  # env
+  flutter_dotenv: ^5.0.2
+
+  # log
+  logger: ^1.1.0
+  pretty_dio_logger: ^1.3.1
+
+  # state
+  flutter_bloc: ^8.1.2
+  provider: ^6.0.5
+
+  # native
+  flutter_svg: ^2.0.0+1
+
+  # networking
+  dio: ^5.0.0
+  retrofit: ^4.0.1
+  connectivity_plus: ^3.0.3
+
+  # navigation
+  get: ^4.6.5
+
+  # storage
+  shared_preferences: ^2.0.17
+
+  # DI & SL
+  injectable: ^2.1.0
+  get_it: ^7.2.0
+  
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # icon
+  flutter_launcher_icons: ^0.11.0
+
+  # service
+  build_runner: ^2.3.3
+  injectable_generator: ^2.1.4
+  retrofit_generator: ^5.0.0
+
+  # analytics
+  flutter_lints: ^2.0.1
+
+#flutter_icons:
+#  image_path: "assets/images/logo/icon.png"
+#  web:
+#    generate: true
+#    image_path: "assets/images/logo/icon.png"
+#    background_color: "#323a45"
+#    theme_color: "#323a45"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Black.ttf
+          weight: 900
+          style: normal
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
+          weight: 800
+          style: normal
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+          style: normal
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+          style: normal
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+          style: normal
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+          style: normal
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+          style: normal
+        - asset: assets/fonts/Poppins-ExtraLight.ttf
+          weight: 200
+          style: normal
+        - asset: assets/fonts/Poppins-Thin.ttf
+          weight: 100
+          style: normal
+       
